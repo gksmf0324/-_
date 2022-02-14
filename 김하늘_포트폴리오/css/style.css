@@ -21,7 +21,7 @@
 
 header{ 
     padding: 10px 20px 0; 
-    position: fixed;
+    position: fixed; /*안붙일거임*/
     left: 50%;
     transform: translateX(-50%);
     z-index: 100    ;
@@ -50,7 +50,7 @@ header ul li a:hover{
 /* 슬라이드 */
 .slide-container { 
     width: 100%; 
-    height: 960px; 
+    height: 900px; 
     position: relative;
     box-sizing: border-box;
 }
@@ -69,7 +69,7 @@ header ul li a:hover{
 /* 슬라이드 타이틀 */
 .slide-container .slide .title-box {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -86,7 +86,7 @@ header ul li a:hover{
 /* 찢긴 효과 */
 .slide-container .slide-top {
     position: absolute; 
-    bottom: -15%;
+    bottom: -10%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
@@ -98,7 +98,7 @@ header ul li a:hover{
 
 .input-title {
     position: relative;
-    top: 20px;
+    top: -15px;
     font-size: 30px;
     text-align: center;
 }
@@ -111,6 +111,7 @@ header ul li a:hover{
     position: relative;
     color: none;
   top: 100px;
+  height: 300px;
 }
 
 #input-search { 
@@ -138,6 +139,7 @@ header ul li a:hover{
 
 .nav-box{
     width: 500px;
+    /* height: 50px; */
     margin: 0 auto;
 
 }
@@ -161,7 +163,76 @@ header ul li a:hover{
 
 
 /* 여행지추천 슬라이드 */
-.slide-box{
-    background-color: rgb(191, 240, 255);
-    height: 710px;
+#silde-box{
+    display: block;
+    background-color: rgb(230, 249, 255);
+    height: 400px;
+
+}
+
+.sb-silde-box ul li img {
+    position: relative;
+    height: 300px;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.sb-silde-box ul li img{
+    
+} /* 박스에서 넘어가면 히든...?*/
+
+#silde-box h2{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+/* footer전 이미지 nav */
+.last-img-nav{
+    position: relative;
+    width: 1200px;
+    height: 290px;
+}
+.last-img-nav img{
+    position: relative;
+    display: inline-block;
+    height: 130px;
+    margin: 10px 10px 0 0;
+   
+}
+
+
+/* footer */
+.footer-box {
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+.fot-SNS  { width: 1200px; margin: 0 auto;}
+.fot-infor{ width: 1200px; height: 40px; margin: 0 auto; }
+
+.footer-box ul li {
+    position: relative;
+    display: inline-block;
+    /* height: 100px; */
+    color: white;
+    font-size: 0.9rem;
+    margin: 0 10px;
+}
+
+.footer-box ul li img{
+    height: 50px;
+    top: 20px;
+
+}
+
+.footer-box .fot-infor ul li {
+    top: 15px;
+    margin: 0 15px 10px 0 ;
 }
