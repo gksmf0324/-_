@@ -10,7 +10,8 @@
 
 
 
-.container {width: 1200px; height: 60px; margin: 0 auto; }
+.container {width: 1200px;  margin: 0 auto; }
+.header-container {width: 1200px; height: 60px; margin: 0 auto; }
 
 .main_logo {position: relative; float: left;}
 .main_logo img {width: 85px; margin: 0 10px ;}
@@ -191,6 +192,39 @@ header ul li a:hover{
 }
 
 
+/* 이슈 섹션 */
+.issue { position: relative;  height: 700px; margin: 0 auto; }
+
+.issue h1 { 
+    position: absolute;
+    top: 70px;
+    font-size: 1.5rem;
+}
+
+.issue-box .issue-box-1 {
+    position: absolute;
+    display: block;
+    width: 395px;
+    height: 220px;
+    color: var(--gray-color);
+}
+
+.issue-box .issue-box-1 h4{
+    position: relative;
+    top: 10px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.issue-box .issue-box-1 p {
+    width: 190px;
+    height: 60px;
+}
+
+.issue-box .issue-box-1 hr {top: 10px;}
+
 
 /* footer전 이미지 nav */
 .last-img-nav{
@@ -214,17 +248,40 @@ header ul li a:hover{
     background-color: black;
 }
 
-.fot-SNS  { width: 1200px; margin: 0 auto;}
-.fot-infor{ width: 1200px; height: 40px; margin: 0 auto; }
+.fot-sns  { width: 1200px; height: 80px; margin: 0 auto;}
+.fot-infor{ width: 1200px; height: 90px; margin: 0 auto; }
 
-.footer-box ul li {
+footer hr {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer .footer-box .fot-sns ul li {
     position: relative;
     display: inline-block;
-    /* height: 100px; */
+
+}
+
+
+footer .footer-box .fot-infor ul li{
+    position: relative;
+    display: inline-block;
     color: white;
     font-size: 0.9rem;
     margin: 0 10px;
+
 }
+
+
+
+/* .footer-box ul li {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-size: 0.9rem;
+    margin: 0 10px;
+} */
 
 .footer-box ul li img{
     height: 50px;
