@@ -4,6 +4,7 @@
     /* CSS 변수 사용하기 */
     --main-bg-color : #ae0000;
     --gray-color : #d0d0d0;
+    --gray-color2 : #f2eeee;
     --white-color : #fff;
 
 }
@@ -22,7 +23,7 @@
 
 header{ 
     padding: 10px 20px 0; 
-    position: fixed; /*안붙일거임*/
+    position: absolute; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 100    ;
@@ -108,13 +109,6 @@ header ul li a:hover{
 } */
 
 
-.input-box {
-    position: relative;
-    color: none;
-  top: 100px;
-  height: 300px;
-}
-
 #input-search { 
     display: block;
     width: 500px;
@@ -128,13 +122,24 @@ header ul li a:hover{
     font-size: 2rem;
     transition: width 0.3s;
     margin: 0 auto;
+    text-align: center;
 }
+
+
+
+.input-search {
+    position: relative;
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+}
+
 
 .input-search img{
     position: absolute;
-    width: 41px;
+    width: 30px;
     top: 6px;
-    right: 450px;
+    right: 15px;
 }
 
 
@@ -159,6 +164,7 @@ header ul li a:hover{
 .input-search ul li :hover {
     color: #202020;
     font-weight: 600;
+    transition: color 1s;
 }
 
 
@@ -193,49 +199,139 @@ header ul li a:hover{
 
 
 /* 이슈 섹션 */
-.issue { position: relative;  height: 700px; margin: 0 auto; }
+.issue { position: relative; width: 1200px; height: 700px; margin: 0 auto; }
 
 .issue h1 { 
     position: absolute;
+    width: 300px;
+    height: 50px;
     top: 70px;
     font-size: 1.5rem;
 }
 
+.issue-box ul li {
+    position: relative; 
+    display: inline-block; 
+    top: 120px;
+    margin: 0 10px 10px 0;}
+
+.issue-box .issue-box-3{
+    position: relative;
+    width: 370px;
+    height: 450px;
+    color: var(--gray-color2);
+}
+
 .issue-box .issue-box-1 {
-    position: absolute;
+    position: relative;
     display: block;
     width: 395px;
     height: 220px;
-    color: var(--gray-color);
+    background-color: var(--gray-color2);
 }
 
 .issue-box .issue-box-1 h4{
     position: relative;
-    top: 10px;
+    width: 350px;
+   
+    margin: auto;
+    padding: 20px 0 20px 0;
     text-align: center;
     color: black;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1.4rem
 }
 
-.issue-box .issue-box-1 p {
-    width: 190px;
+.issue-box .issue-box-1 .isu-contents {
+    width: 250px;
     height: 60px;
+    margin: 0 auto;
+    font-weight: 600;
+    color: black;
+    font-size: 1.2rem;
+    padding: 20px;
 }
 
-.issue-box .issue-box-1 hr {top: 10px;}
+.issue-box .issue-box-1 hr {width: 300px; margin: 0 auto; top: 20px;}
+
+.issue-box .issue-box-1 .issue-today {     
+    position: relative;
+    float: right;
+    right: 30px;
+    font-weight: 500;
+}
+
+/* 테마섹션 */
+.theme-box{ position: relative; width: 1200px; height: 500px; margin: 0 auto;}
+
+.theme-box h1 {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    
+    font-size: 1.5rem;
+
+}
+
+.theme-box .theme-main-title{
+    font-size: 1.8rem;
+
+}
+
+/* 물어봐야할 부분 */
+
+.theme-list{ display: inline-block; float: right; margin: 0 0 0 10px;} /* li 순서반대 수정*/
+.theme-list-box {
+    position: relative;
+   
+    width: 250px;
+    height: 360px;
+    background-color: var(--gray-color);
+}
+.theme-list-box p{
+    position: relative;
+    display: block;
+    width: 200px;
+    top: 369px; }
+
+.theme-list-box img{
+    
+
+}
+
+.theme-bag{
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    background-color: var(--gray-color2);
+    top: 250px;
+    z-index: -2;
+}
+
+/* 비디오 */
+
+.youtubu_video { width: 1200px; height: 500px;}
+
+.youtubu_video video{
+    position: relative;
+    width:600px;
+    margin: 0 auto;
+   
+}
+
+
 
 
 /* footer전 이미지 nav */
 .last-img-nav{
     position: relative;
     width: 1200px;
-    height: 290px;
+    height: 320px;
 }
 .last-img-nav img{
     position: relative;
     display: inline-block;
-    height: 130px;
+    height: 148px;
     margin: 10px 10px 0 0;
    
 }
@@ -270,6 +366,7 @@ footer .footer-box .fot-infor ul li{
     color: white;
     font-size: 0.9rem;
     margin: 0 10px;
+    padding: 10px 0 0 0;
 
 }
 
