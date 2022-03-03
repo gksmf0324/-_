@@ -49,6 +49,9 @@ header ul li a:hover{
     transition: color 0.5s;
 }
 
+/* 섹션 */
+section { position: relative; }
+
 /* 슬라이드 */
 .slide-container { 
     width: 100%; 
@@ -199,21 +202,30 @@ header ul li a:hover{
 
 
 /* 이슈 섹션 */
-.issue { position: relative; width: 1200px; height: 700px; margin: 0 auto; }
+.issue { position: relative; width: 1200px; height: 700px; margin: 0 auto; margin-top: 120px;}
 
 .issue h1 { 
-    position: absolute;
     width: 300px;
     height: 50px;
-    top: 70px;
     font-size: 1.5rem;
+}
+
+.issue-box { position: relative; }
+.issue-box .util-box { text-align: right; margin: 0 30px 15px 0; }
+
+.issue-box ul {
+    height: 100%;
 }
 
 .issue-box ul li {
     position: relative; 
     display: inline-block; 
-    top: 120px;
-    margin: 0 10px 10px 0;}
+    
+    margin: 0 10px 10px 0;
+}
+
+.issue-box .issue-left { width: 820px; float: left; }
+.issue-box .issue-right { width: 370px; float: right; }
 
 .issue-box .issue-box-3{
     position: relative;
@@ -261,6 +273,15 @@ header ul li a:hover{
     font-weight: 500;
 }
 
+
+.issue-box .img-box { width: 370px; height: 450px; overflow: hidden;; }
+.issue-box .img-box .issue-slide { width: 370px; position: relative; }
+.issue-box .img-box img { 
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+ }
+
 /* 테마섹션 */
 .theme-box{ position: relative; width: 1200px; height: 500px; margin: 0 auto;}
 
@@ -276,6 +297,11 @@ header ul li a:hover{
 .theme-box .theme-main-title{
     font-size: 1.8rem;
 
+}
+
+.theme-box .btn-more {
+    position: absolute;
+    bottom: 100px;
 }
 
 /* 물어봐야할 부분 */
@@ -389,4 +415,11 @@ footer .footer-box .fot-infor ul li{
 .footer-box .fot-infor ul li {
     top: 15px;
     margin: 0 15px 10px 0 ;
+}
+
+/* slick 슬라이드 */
+/* slick - 네비게이션 화살표 */
+.slick-prev::before,
+.slick-next::before {
+    color: black;
 }
