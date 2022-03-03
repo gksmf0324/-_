@@ -183,33 +183,22 @@ section { position: relative; }
 
 
 
-/* 여행지추천 슬라이드 */
-#silde-box{
-    display: block;
-    background-color: rgb(230, 249, 255);
-    height: 400px;
+/* 여행지 추천 슬라이드 */
 
+.trip-slide {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(231, 247, 255) ;
 }
-
-.sb-silde-box ul li img {
+.trip-slide h1 {
     position: relative;
-    height: 300px;
-    top: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-}
-
-.sb-silde-box ul li img{
-    
-} /* 박스에서 넘어가면 히든...?*/
-
-#silde-box h2{
-    position: relative;
-    top: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
+    top: 25px;
 }
+
+
+
 
 
 /* 이슈 섹션 */
@@ -423,8 +412,36 @@ section { position: relative; }
     background-color: black;
 }
 
-.fot-sns  { width: 1200px; height: 80px; margin: 0 auto;}
 .fot-infor{ width: 1200px; height: 90px; margin: 0 auto; }
+
+.footer-box .fot-sns ul li{
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    
+}
+
+.fot-sns  { height: 100px; margin: 0 auto;}
+
+.fot-sns ul li img {  
+    height: 30px;
+    margin: 0 15px ;
+    
+}
+
+.fot-sns ul li p {  
+   color: white;
+   text-align: center;
+   margin: 7px;
+   font-size: 0.7rem;
+}
+
+.fot-sns-text {
+    color: white;
+}
+
+
+
 
 footer hr {
     position: relative;
@@ -432,11 +449,6 @@ footer hr {
     margin: 0 auto;
 }
 
-footer .footer-box .fot-sns ul li {
-    position: relative;
-    display: inline-block;
-
-}
 
 
 footer .footer-box .fot-infor ul li{
@@ -449,21 +461,18 @@ footer .footer-box .fot-infor ul li{
 
 }
 
+.fot-logo{width: 1200px; height: 80px;}
 
-
-/* .footer-box ul li {
+.fot-logo ul li{
     position: relative;
     display: inline-block;
-    color: white;
-    font-size: 0.9rem;
-    margin: 0 10px;
-} */
-
-.footer-box ul li img{
-    height: 50px;
     top: 20px;
-
+    margin: 0 10px 0 0;
 }
+
+
+
+
 
 .footer-box .fot-infor ul li {
     top: 15px;
