@@ -1,4 +1,13 @@
 
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+p, h1,h2,ul,li {font-family: 'Pretendard-Regular';}
+
 
 :root {
     /* CSS 변수 사용하기 */
@@ -40,6 +49,7 @@ header ul li a {
     padding: 0 8px;
     margin: 0 10px;
     width: 100px;
+    font-weight: 100;
 }
 
 header ul li a:hover{
@@ -47,6 +57,7 @@ header ul li a:hover{
     border-bottom: 3px solid var(--main-bg-color);
     color: var(--main-bg-color);
     transition: color 0.5s;
+    font-weight: bold;
 }
 
 /* 섹션 */
@@ -211,7 +222,10 @@ section { position: relative; }
 }
 
 .issue-box { position: relative; }
-.issue-box .util-box { text-align: right; margin: 0 30px 15px 0; }
+.issue-box .util-box1 { text-align: right; margin: 0 10px 15px 0; }
+.issue-box .util-box2 { text-align: right; margin: 0 0px 15px 0; }
+
+.issue-box .util-box1 .isu-util-p img { width: 30px; }
 
 .issue-box ul {
     height: 100%;
@@ -282,11 +296,18 @@ section { position: relative; }
     height: 450px;
  }
 
+.issue-img-btn img{
+    width: 6px;
+   
+}
+
+
+
 /* 테마섹션 */
-.theme-box{ position: relative; width: 1200px; height: 500px; margin: 0 auto;}
+.theme-box{ position: relative; width: 1200px; height: 700px; margin: 0 auto;}
 
 .theme-box h1 {
-    position: absolute;
+    position: relative;
     width: 300px;
     height: 50px;
     
@@ -299,51 +320,83 @@ section { position: relative; }
 
 }
 
-.theme-box .btn-more {
-    position: absolute;
-    bottom: 100px;
-}
 
 /* 물어봐야할 부분 */
 
-.theme-list{ display: inline-block; float: right; margin: 0 0 0 10px;} /* li 순서반대 수정*/
+.theme-list {    
+    width: 792px;
+    height: 380px;
+    float: right;
+    }
+
+
+.theme-list ul {
+    display: inline-block;
+    margin: 0 0 0 10px;
+}
+
 .theme-list-box {
     position: relative;
-   
     width: 250px;
     height: 360px;
     background-color: var(--gray-color);
+    
 }
+
+.theme-list-box img{
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
 .theme-list-box p{
     position: relative;
     display: block;
     width: 200px;
-    top: 369px; }
-
-.theme-list-box img{
+    top: 369px; 
     
-
 }
+
+
 
 .theme-bag{
     position: absolute;
     width: 100%;
-    height: 180px;
+    height: 250px;
     background-color: var(--gray-color2);
     top: 250px;
     z-index: -2;
 }
 
-/* 비디오 */
 
-.youtubu_video { width: 1200px; height: 500px;}
+.theme-box .btn-more {
+    position: absolute;
+    bottom: 230px;
+    clear: left;
+}
 
-.youtubu_video video{
+.theme-list-text { 
+    position: absolute;
+    right: 0;
+    width:792px; 
+    height: 40px; 
+    bottom: 230px;
+}
+
+
+
+.theme-list-text ul li{
     position: relative;
-    width:600px;
-    margin: 0 auto;
+    width: 250px;
+    height: 38px;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    text-align: left;
    
 }
+
 
 
 
