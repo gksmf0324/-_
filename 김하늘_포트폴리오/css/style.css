@@ -96,8 +96,19 @@ section { position: relative; }
     text-align: center;
 }
 
+
+
 /* 슬라이드 */
-.slide-container .slide .slide-item > img { width: 100%; filter: brightness(40%); }
+.slide-container .slide .slide-item ul{ width: 100%;  display: inline-block; z-index: -1}
+
+.slide-container .slide .slide-item ul li > img  { 
+    width: 100%;
+    height: 1000px; 
+    filter: brightness(40%);
+    object-fit: cover;
+    overflow: hidden;
+
+ }
 
 /* 찢긴 효과 */
 .slide-container .slide-top {
@@ -187,7 +198,7 @@ section { position: relative; }
 
 .trip-slide {
     width: 100%;
-    height: 700px;
+    height: 500px;
     background-color: rgb(231, 247, 255) ;
 }
 .trip-slide h1 {
@@ -198,12 +209,14 @@ section { position: relative; }
 }
 
 .trip-slide-box{
-    background: #ccc;
     width: 100%;
     height: 450px;
     margin: 35px 0;
+    display: flex;
+    justify-content: center;
     
 }
+
 
 .trip-box1 {
     position: relative;
@@ -213,6 +226,8 @@ section { position: relative; }
     height: 400px;
     background: var(--gray-color);
     border-radius: 10px;
+    top: 10px;
+
 
 }
 
@@ -220,10 +235,20 @@ section { position: relative; }
     display: inline-block;
 }
 
+.trip-slide-box ul li {
+    margin: 0 10px;
+}
+
 .trip-slide-box ul li img {
     object-fit: cover;
     width: 100%;
     height: 400px;
+}
+
+.trip-slide-box .slide {
+    margin: 0 auto;
+    /* width: 1080px; */
+    height: 530px;
 }
 
 
@@ -240,7 +265,7 @@ section { position: relative; }
 
 .issue-box { position: relative; }
 .issue-box .util-box1 { text-align: right; margin: 0 10px 15px 0; }
-.issue-box .util-box2 { text-align: right; margin: 0 0px 15px 0; }
+.issue-box .util-box2 { text-align: right; margin: 0 0px 22px 0; }
 
 .issue-box .util-box1 .isu-util-p img { width: 30px; }
 
@@ -313,9 +338,13 @@ section { position: relative; }
     height: 450px;
  }
 
-.issue-img-btn img{
+.issue-img-btn  img {
+    width: 10px;
+}
+
+.issue-img-btn .nav {
     width: 6px;
-   
+    height: 16px;
 }
 
 
@@ -402,6 +431,10 @@ section { position: relative; }
     bottom: 230px;
 }
 
+.theme-list-text ul {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .theme-list-text ul li{
@@ -413,6 +446,7 @@ section { position: relative; }
     text-align: left;
    
 }
+
 
 
 
@@ -449,7 +483,7 @@ section { position: relative; }
     
 }
 
-.fot-sns  { height: 100px; margin: 0 auto;}
+.fot-sns  { height: 100px; margin: 0 auto; text-align: center; }
 
 .fot-sns ul li img {  
     height: 30px;
@@ -489,7 +523,7 @@ footer .footer-box .fot-infor ul li{
 
 }
 
-.fot-logo{width: 1200px; height: 80px;}
+.fot-logo{width: 1200px; height: 80px; text-align: right;}
 
 .fot-logo ul li{
     position: relative;
@@ -506,6 +540,8 @@ footer .footer-box .fot-infor ul li{
     top: 15px;
     margin: 0 15px 10px 0 ;
 }
+
+.hide { display: none; }
 
 /* slick 슬라이드 */
 /* slick - 네비게이션 화살표 */
